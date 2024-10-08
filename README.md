@@ -1,4 +1,7 @@
 # RobertaWilliams_APP
+- Projeto de um app mobile sobre a desenvolvedora Roberta Williams e seus trabalhos significativos
+
+
  ## integrantes
 - Robert Caio Gomes Mota
 - João Lucas dos Anjos Pinto
