@@ -1,5 +1,5 @@
 # RobertaWilliams_APP
-- Projeto de um app mobile sobre a desenvolvedora Roberta Williams e seus trabalhos significativos
+- Projeto de um app mobile sobre a Designer Roberta Williams e seus trabalhos significativos
 
   <img width = "250" src="https://github.com/user-attachments/assets/a78ddfca-d065-4f18-9226-76df96ad6b3a">
 
