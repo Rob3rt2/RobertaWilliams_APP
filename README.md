@@ -21,3 +21,9 @@
 - <a href = "https://github.com/Rob3rt2/RobertaWilliams_APP/wiki/Diagramas">Diagramas </a>
 
 - <a href = "https://github.com/Rob3rt2/RobertaWilliams_APP/wiki/Prot%C3%B3tipo"> Prototipo </a>
+
+- <a href = "https://github.com/Rob3rt2/RobertaWilliams_APP/wiki/Jogos"> Jogos</a>
+
+- <a href = "https://github.com/Rob3rt2/RobertaWilliams_APP/wiki/Empresas"> Empresas</a>
+
+- <a href = "https://github.com/Rob3rt2/RobertaWilliams_APP/wiki/Bibliografia"> Bibliografia</a>
