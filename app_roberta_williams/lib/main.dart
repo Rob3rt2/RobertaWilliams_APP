@@ -1,4 +1,6 @@
+import 'package:app_roberta_williams/Biografia.dart';
 import 'package:app_roberta_williams/Empresa.dart';
+import 'package:app_roberta_williams/Jogo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -47,7 +49,7 @@ class MainApp extends StatelessWidget {
                 width: 55,
               ),
               IconButton(
-                  onPressed: () => Navegacao(context),
+                  onPressed: () => Navegacao(context, 1),
                   icon: Icon(
                     Icons.menu_book,
                     color: Colors.white,
@@ -57,7 +59,7 @@ class MainApp extends StatelessWidget {
                 width: 100,
               ),
               IconButton(
-                  onPressed: () => Navegacao(context, Emp == true),
+                  onPressed: () => Navegacao(context, 2),
                   icon: Icon(
                     Icons.apartment,
                     color: Colors.white,
@@ -67,7 +69,7 @@ class MainApp extends StatelessWidget {
                 width: 100,
               ),
               IconButton(
-                  onPressed: () => Navegacao(context),
+                  onPressed: () => Navegacao(context, 3),
                   icon: Icon(
                     Icons.videogame_asset,
                     color: Colors.white,
@@ -81,16 +83,29 @@ class MainApp extends StatelessWidget {
   }
 }
 
-Navegacao(BuildContext context, bool Emp) {
-  Emp = false;
-  bool Bio = false;
-  bool Jog = false;
+Navegacao(BuildContext context, int numero) {
+  switch (numero)
+  {
+    case 1:
+      Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Biografia())
+      );
+    break;
 
-  if(Emp){
-    Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => Empresa()),
-  );
+    case 2:
+      Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Empresa())
+      );
+    break;
+
+    case 3:
+      Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Jogo())
+      );
+    break;
   }
 }
 
