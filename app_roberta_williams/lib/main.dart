@@ -96,7 +96,7 @@ Navegacao(BuildContext context, int numero) {
     case 2:
       Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Empresa())
+      MaterialPageRoute(builder: (context) => TelaEmpresa())
       );
     break;
 
