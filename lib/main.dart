@@ -1,6 +1,6 @@
-import 'package:app_roberta_williams/Biografia.dart';
-import 'package:app_roberta_williams/Empresa.dart';
-import 'package:app_roberta_williams/Jogo.dart';
+import 'package:app_roberta_williams/ViewBiografia.dart';
+import 'package:app_roberta_williams/ViewEmpresa.dart';
+import 'package:app_roberta_williams/ViewJogo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,41 +41,41 @@ class MainApp extends StatelessWidget {
             )),
           ],
         ),
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.black,
-          child: Row(
-            children: [
-              SizedBox(
-                width: 55,
-              ),
-              IconButton(
+        bottomNavigationBar: Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.white, width: 1), // Contorno branco no BottomAppBar
+          ),
+          child: BottomAppBar(
+            color: Colors.black,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround, // Distribui os ícones igualmente
+              children: [
+                IconButton(
                   onPressed: () => Navegacao(context, 1),
                   icon: Icon(
                     Icons.menu_book,
                     color: Colors.white,
                     size: 40,
-                  )),
-              SizedBox(
-                width: 100,
-              ),
-              IconButton(
+                  ),
+                ),
+                IconButton(
                   onPressed: () => Navegacao(context, 2),
                   icon: Icon(
                     Icons.apartment,
                     color: Colors.white,
                     size: 40,
-                  )),
-                  SizedBox(
-                width: 100,
-              ),
-              IconButton(
+                  ),
+                ),
+                IconButton(
                   onPressed: () => Navegacao(context, 3),
                   icon: Icon(
                     Icons.videogame_asset,
                     color: Colors.white,
                     size: 40,
-                  )),
-            ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -103,7 +103,7 @@ Navegacao(BuildContext context, int numero) {
     case 3:
       Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Jogo())
+      MaterialPageRoute(builder: (context) => ViewJogo())
       );
     break;
   }
