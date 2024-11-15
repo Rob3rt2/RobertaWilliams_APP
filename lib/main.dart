@@ -1,6 +1,6 @@
-import 'package:app_roberta_williams/ViewBiografia.dart';
-import 'package:app_roberta_williams/ViewEmpresa.dart';
-import 'package:app_roberta_williams/ViewJogo.dart';
+import 'package:app_roberta_williams/Views/ViewBiografia.dart';
+import 'package:app_roberta_williams/Views/ViewEmpresa.dart';
+import 'package:app_roberta_williams/Views/ViewJogo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -89,14 +89,14 @@ Navegacao(BuildContext context, int numero) {
     case 1:
       Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Biografia())
+      MaterialPageRoute(builder: (context) => ViewBiografia())
       );
     break;
 
     case 2:
       Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => TelaEmpresa())
+      MaterialPageRoute(builder: (context) => ViewEmpresa())
       );
     break;
 
